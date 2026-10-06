@@ -21,8 +21,8 @@ The system simulates an embedded telemetry architecture (similar to UAV or indus
 
 ## Task Breakdown & Priorities
 1. Battery Sender Task (Priority 1 - 1000ms periodicity):
-  *Generates simulated battery voltage levels (11.4V - 12.6V) using the STM32 Hardware Random Number Generator (RNG).
-  *Passes data via Pass-by-Value into Queue 1 and toggles the Green LED (PD12).
+  * Generates simulated battery voltage levels (11.4V - 12.6V) using the STM32 Hardware Random Number Generator (RNG).
+  * Passes data via Pass-by-Value into Queue 1 and toggles the Green LED (PD12).
 2. Motor Sender Task (Priority 1 - 500ms periodicity):
   *Generates simulated motor temperature ($80^\circ\text{C}$ – $120^\circ\text{C}$) and RPM (7000 - 8000).
   *Passes data into Queue 2 and toggles the Orange LED (PD13).
