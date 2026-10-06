@@ -5,7 +5,7 @@ A real-time telemetry gateway built on the STM32F407G Discovery board using Free
 ## Project Architecture & Features
 
 The system simulates an embedded telemetry architecture (similar to UAV or industrial motor monitoring systems) where multiple sensor tasks run at different frequencies and feed data into an asynchronous central receiver.
-"""
+```text
 ┌──────────────────────┐        ┌──────────────────┐
 │ Battery Sender (1Hz) │───────>│                  │
 └──────────────────────┘        │                  │
@@ -17,4 +17,5 @@ The system simulates an embedded telemetry architecture (similar to UAV or indus
 ┌──────────────────────┐        │                  │
 │ Error / Button (PA0) │───────>│                  │
 └──────────────────────┘        └──────────────────┘
-""" 
+```
+
