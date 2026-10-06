@@ -47,3 +47,8 @@ Green LED,PD12,Battery Task Heartbeat
 Orange LED,PD13,Motor Task Heartbeat
 Red LED,PD14,Error / Alarm State Indicator
 Blue LED,PD15,Receiver Gateway Activity Indicator
+
+# Getting Started & Requirements
+  * IDE: STM32CubeIDE (v1.15 or newer recommended)
+  * RTOS: FreeRTOS (CMSIS-RTOS v1/v2 wrapper or native API)
+  * Hardware: STM32F407G Discovery Board, USB-to-TTL Serial Adapter.
