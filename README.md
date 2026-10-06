@@ -53,8 +53,8 @@ Blue LED,PD15,Receiver Gateway Activity Indicator
   * RTOS: FreeRTOS (CMSIS-RTOS v1/v2 wrapper or native API)
   * Hardware: STM32F407G Discovery Board, USB-to-TTL Serial Adapter.
 
-* 1. Clone the repository:
+ 1. Clone the repository:
      ```bash git clone https://github.com/Raul-dev00/stm32-freertos-telemetry.git ```
-* 2. Open the project inside STM32CubeIDE.
-* 3. Build and flash the binary to your STM32F407G Discovery board.
-* 3. Connect a serial terminal (e.g., Cutecom, PuTTY) to your UART port at 9600 Baud Rate to view the live telemetry stream.
+ 2. Open the project inside STM32CubeIDE.
+ 3. Build and flash the binary to your STM32F407G Discovery board.
+ 3. Connect a serial terminal (e.g., Cutecom, PuTTY) to your UART port at 9600 Baud Rate to view the live telemetry stream.
