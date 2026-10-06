@@ -42,7 +42,7 @@ The system simulates an embedded telemetry architecture (similar to UAV or indus
 # Pinout Configuration
 | Peripheral | STM32 Pin | Function |
 | :--- | :--- | :--- |
-| **UART (Telemetry)** | `PA2` / `PA3` (USART2) | Data transmission to Host / USB-TTL |
+| **UART (Telemetry)** | `PB6` / `PB7` (USART2) | Data transmission to Host / USB-TTL |
 | **Emergency Button** | `PA0` | User Blue Push-Button (Active High) |
 | **Green LED** | `PD12` | Battery Task Heartbeat |
 | **Orange LED** | `PD13` | Motor Task Heartbeat |
