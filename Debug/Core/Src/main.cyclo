@@ -1,0 +1,11 @@
+../Core/Src/main.c:92:13:vTaskBatterySender	2
+../Core/Src/main.c:110:13:vTaskMotorSender	2
+../Core/Src/main.c:130:13:vTaskErrorSender	3
+../Core/Src/main.c:151:13:vTaskReceiver	6
+../Core/Src/main.c:199:5:main	5
+../Core/Src/main.c:283:6:SystemClock_Config	3
+../Core/Src/main.c:330:13:MX_RNG_Init	2
+../Core/Src/main.c:356:13:MX_USART1_UART_Init	2
+../Core/Src/main.c:389:13:MX_GPIO_Init	1
+../Core/Src/main.c:433:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:451:6:Error_Handler	1
