@@ -38,3 +38,12 @@ The system simulates an embedded telemetry architecture (similar to UAV or indus
   * Stack Overflow Prevention: Optimized FreeRTOS task stack allocations (```512 words```) to safely accommodate runtime formatting operations (```sprintf```).
   * Hardware Conflict Resolution: Bypassed board-specific pin limitations (such as the VBUS Micro-USB conflict on PA9 and the audio codec conflict on PB6) by mapping clean UART lines and configuring appropriate MSP initialization.
   * Signal Integrity & Baud Rate Tuning: Adjusted communication stability by optimizing baud rates (9600 bps) to prevent HSI clock jitter and bit drift over physical TTL lines.
+
+# Pinout Configuration
+Peripheral,STM32 Pin,Function
+UART (Telemetry),PA2 / PA3 (USART2) or configured TX/RX,Data transmission to Host / USB-TTL
+Emergency Button,PA0,User Blue Push-Button (Active High)
+Green LED,PD12,Battery Task Heartbeat
+Orange LED,PD13,Motor Task Heartbeat
+Red LED,PD14,Error / Alarm State Indicator
+Blue LED,PD15,Receiver Gateway Activity Indicator
