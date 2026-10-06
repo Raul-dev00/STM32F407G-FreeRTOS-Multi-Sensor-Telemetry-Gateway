@@ -40,13 +40,14 @@ The system simulates an embedded telemetry architecture (similar to UAV or indus
   * Signal Integrity & Baud Rate Tuning: Adjusted communication stability by optimizing baud rates (9600 bps) to prevent HSI clock jitter and bit drift over physical TTL lines.
 
 # Pinout Configuration
-Peripheral,STM32 Pin,Function
-UART (Telemetry),PA2 / PA3 (USART2) or configured TX/RX,Data transmission to Host / USB-TTL
-Emergency Button,PA0,User Blue Push-Button (Active High)
-Green LED,PD12,Battery Task Heartbeat
-Orange LED,PD13,Motor Task Heartbeat
-Red LED,PD14,Error / Alarm State Indicator
-Blue LED,PD15,Receiver Gateway Activity Indicator
+| Peripheral | STM32 Pin | Function |
+| :--- | :--- | :--- |
+| **UART (Telemetry)** | `PA2` / `PA3` (USART2) | Data transmission to Host / USB-TTL |
+| **Emergency Button** | `PA0` | User Blue Push-Button (Active High) |
+| **Green LED** | `PD12` | Battery Task Heartbeat |
+| **Orange LED** | `PD13` | Motor Task Heartbeat |
+| **Red LED** | `PD14` | Error / Alarm State Indicator |
+| **Blue LED** | `PD15` | Receiver Gateway Activity Indicator |
 
 # Getting Started & Requirements
   * IDE: STM32CubeIDE (v1.15 or newer recommended)
