@@ -1,8 +1,8 @@
-## STM32F407G FreeRTOS Multi-Sensor Telemetry Gateway
+# STM32F407G FreeRTOS Multi-Sensor Telemetry Gateway
 
 A real-time telemetry gateway built on the STM32F407G Discovery board using FreeRTOS. This project demonstrates advanced embedded systems concepts, including asynchronous event handling via Queue Sets, task priority management, hardware-level random number generation, and safe memory management.
 
-## Project Architecture & Features
+# Project Architecture & Features
 
 The system simulates an embedded telemetry architecture (similar to UAV or industrial motor monitoring systems) where multiple sensor tasks run at different frequencies and feed data into an asynchronous central receiver.
 ```text
@@ -19,7 +19,7 @@ The system simulates an embedded telemetry architecture (similar to UAV or indus
 └──────────────────────┘        └──────────────────┘
 ```
 
-## Task Breakdown & Priorities
+# Task Breakdown & Priorities
 ### 1. Battery Sender Task (Priority 1 - 1000ms periodicity):
   * Generates simulated battery voltage levels (11.4V - 12.6V) using the STM32 Hardware Random Number Generator (RNG).
   * Passes data via Pass-by-Value into Queue 1 and toggles the Green LED (PD12).
