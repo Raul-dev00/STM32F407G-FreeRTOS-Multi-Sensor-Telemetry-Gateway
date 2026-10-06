@@ -6,14 +6,14 @@ A real-time telemetry gateway built on the STM32F407G Discovery board using Free
 
 The system simulates an embedded telemetry architecture (similar to UAV or industrial motor monitoring systems) where multiple sensor tasks run at different frequencies and feed data into an asynchronous central receiver.
 
- ┌──────────────────────┐       ┌──────────────────┐
- | Battery Sender (1Hz) |------>|                  |
- └──────────────────────┘       |                  |
-                                |   FreeRTOS       |
- ┌──────────────────────┐       |   Queue Set      |---> [Receiver Task] ---> UART Terminal
- | Motor Sender (0.5Hz) |------>| (xQueueSelect)   |      (Priority 2)        (9600 Baud)
- └──────────────────────┘       |                  |
-                                |                  |
- ┌──────────────────────┐       |                  |
- | Error / Button (PA0) |------>|                  |
- └──────────────────────┘       └──────────────────┘
+┌──────────────────────┐        ┌──────────────────┐
+│ Battery Sender (1Hz) │───────>│                  │
+└──────────────────────┘        │                  │
+                                │   FreeRTOS       │
+┌──────────────────────┐        │   Queue Set      │───> [Receiver Task] ───> UART Terminal
+│ Motor Sender (0.5Hz) │───────>│ (xQueueSelect)   │      (Priority 2)        (9600 Baud)
+└──────────────────────┘        │                  │
+                                │                  │
+┌──────────────────────┐        │                  │
+│ Error / Button (PA0) │───────>│                  │
+└──────────────────────┘        └──────────────────┘
